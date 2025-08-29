@@ -82,7 +82,7 @@ def _trend_pct(series: pd.Series) -> float:
 # Page Config
 # ----------------------------
 st.set_page_config(
-    page_title="Market Intelligence Platform - Transworld",
+    page_title="Agritech Market Intelligence Tool",
     page_icon="📈",
     layout="wide",
     initial_sidebar_state="expanded",
@@ -1173,7 +1173,7 @@ def reports_export_tab():
 def main():
     init_session_state()
     render_global_sidebar()
-    st.title("Market Intelligence Platform")
+    st.title("Agritech Market Intelligence Tool - AMIT")
 
     tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs([
         "Executive Summary",
@@ -1199,3 +1199,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
