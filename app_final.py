@@ -826,10 +826,10 @@ def product_analytics_tab():
     # Second row - additional metrics
     # Second row - additional metrics (5 columns to match first row width)
     kpi_cols2 = st.columns(5)
-    kpi_cols2[3].markdown(create_kpi_card("Inventory (est.)", inventory_mt, "MT"), unsafe_allow_html=True)
-    kpi_cols2[1].markdown(create_kpi_card("Price Volatility (σ)", price_vol, ""), unsafe_allow_html=True)
-    kpi_cols2[2].markdown(create_kpi_card("Demand Score", demand_score, ""), unsafe_allow_html=True)
-    kpi_cols2[0].markdown("", unsafe_allow_html=True)  # Empty column
+    kpi_cols2[2].markdown(create_kpi_card("Inventory (est.)", inventory_mt, "MT"), unsafe_allow_html=True)
+    kpi_cols2[0].markdown(create_kpi_card("Price Volatility (σ)", price_vol, ""), unsafe_allow_html=True)
+    kpi_cols2[1].markdown(create_kpi_card("Demand Score", demand_score, ""), unsafe_allow_html=True)
+    kpi_cols2[3].markdown("", unsafe_allow_html=True)  # Empty column
     kpi_cols2[4].markdown("", unsafe_allow_html=True)  # Empty column
 
     # ---- Charts ----
@@ -1316,4 +1316,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
